@@ -1,0 +1,21 @@
+Well explained about options for open function in the following url.
+https://stackoverflow.com/questions/1466000/python-open-built-in-function-difference-between-modes-a-a-w-w-and-r
+
+
+                  | r   r+   w   w+   a   a+
+------------------|--------------------------
+read              | +   +        +        +
+write             |     +    +   +    +   +
+create            |          +   +    +   +
+truncate          |          +   +
+position at start | +   +    +   +
+position at end   |                   +   +
+
+where meanings are: (just to avoid any misinterpretation)
+
+read - reading from file is allowed
+write - writing to file is allowed
+create - file is created if it does not exist yet
+trunctate - during opening of the file it is made empty (all content of the file is erased)
+position at start - after file is opened, initial position is set to the start of the file
+position at end - after file is opened, initial position is set to the end of the file

@@ -1,0 +1,7 @@
+# Created by https://www.gitignore.io/api/python,jupyternotebook
+
+### JupyterNotebook ###
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+
